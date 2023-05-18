@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-image: url(TelaDeFundo.png);
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.motor{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img{
+    width: 30rem;
+    height: auto;
+    justify-content: center;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    text-align: center;
+}
+  
+/*apply css properties to button tag*/
+  
+button {
+    width: 90px;
+    height: 60px;
+    font-size: 30px;
+    background-color: gray;
+    color: whitesmoke;
+}
+  
+/*apply hover effect to button tag*/
+  
+button:hover {
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+  
+/*apply css properties to h2 tag*/
+  
+h2 {
+    color: black;
+    margin: 0 50px;
+    font-size: 45px;
+}
+  
+/*apply css properties to h1 tag*/
+  
+h1 {
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    padding-left: 10%;
+}
