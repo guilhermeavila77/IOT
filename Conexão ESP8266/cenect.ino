@@ -8,7 +8,7 @@ const char *ssid = "nomeDaRede" const char *pas = "senhaDaRede"
     const int relayPin = D1; // Pino GPIO
 
 // Mesma porta do site
-ESP8266WebServer server(80);
+ESP8266WebServer server(3000);
 
 void
 {
