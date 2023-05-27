@@ -9,4 +9,8 @@ router.get('/ligar', (req, res) => {
     res.sendFile(`${basePath}/ligar.html`)
 })
 
+router.get('/desligar', (req, res) => {
+    res.sendFile(`${basePath}/desligar.html`)
+})
+
 module.exports = router
