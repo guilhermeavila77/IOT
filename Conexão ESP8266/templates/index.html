@@ -6,11 +6,17 @@
     <link rel="stylesheet" href="css/style.css">
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-        const ligar = document.getElementById('ligar');
+            const ligar = document.getElementById('ligar');
+            const desligar = document.getElementById('desligar');
 
-        ligar.addEventListener('click', () => {
-            console.log('botão clicado');
-            window.location.href = '/ligar'; // Redireciona para '/ligar'
+            ligar.addEventListener('click', () => {
+                console.log('botão clicado');
+                window.location.href = '/ligar'; // Redireciona para '/ligar'
+            });
+
+            desligar.addEventListener('click', () => {
+                console.log('botão clicado');
+                window.location.href = '/desligar'; // Redireciona para '/ligar'
             });
         });
     </script>
@@ -20,6 +26,5 @@
 
     <button id='ligar'>Ligar</button>
     <button id="desligar">Desligar</button>
-
 </body>
 </html>
