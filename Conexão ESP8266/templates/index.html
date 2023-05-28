@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <title>Comando do Rele</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+        const ligar = document.getElementById('ligar');
+
+        ligar.addEventListener('click', () => {
+            console.log('botão clicado');
+            window.location.href = '/ligar'; // Redireciona para '/ligar'
+            });
+        });
+    </script>
 </head>
 <body>
     <h1>Teste do comando do rele pelo ESP8266</h1>
 
-    <button id="onBtn">Ligar</button>
-    <button id="offBtn">Desligar</button>
+    <button id='ligar'>Ligar</button>
+    <button id="desligar">Desligar</button>
+
 </body>
 </html>
