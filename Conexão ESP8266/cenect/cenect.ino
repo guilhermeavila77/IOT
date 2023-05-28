@@ -1,16 +1,21 @@
-#include <ESP8266WiFi.h>
+#include <WiFiWebServer.h>
+#include <WiFiWebServer.hpp>
+#include <WiFiHttpClient.h>
+
+#include <ESP8266wifi.h>
 #include <ESP8266WebServer.h>
 
 // Declaração das informações da rede WIFI que o ESP está conectado
-const char *ssid = "nomeDaRede" const char *pas = "senhaDaRede"
+const char *ssid = "nomeDaRede" 
+const char *pas = "senhaDaRede"
 
-    // Pino do modulo que controla o relé
-    const int relayPin = D1; // Pino GPIO
+// Pino do modulo que controla o relé
+const int relayPin = D1; // Pino GPIO
 
 // Mesma porta do site
 ESP8266WebServer server(3000);
 
-void
+void setup()
 {
     Serial.begin(115200)
 
@@ -35,7 +40,7 @@ void
     //server.begin();
     //Serial.println("Servidor iniciado!");
 }
-void loop
+void loop()
 {
     //Função de core do <ESP8266WebServer.h>
     //Serve como listening das rotas do server
