@@ -1,28 +1,23 @@
-#include <WiFiWebServer.h>
-#include <WiFiWebServer.hpp>
-#include <WiFiHttpClient.h>
-
-#include <ESP8266wifi.h>
+#include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 
 // Declaração das informações da rede WIFI que o ESP está conectado
-const char *ssid = "nomeDaRede" 
-const char *pas = "senhaDaRede"
-
+const char *ssid = "redeWifi" ;
+const char *pas = "senha"
 // Pino do modulo que controla o relé
-const int relayPin = D1; // Pino GPIO
+const int relayPin = 5; // Pino GPIO
 
 // Mesma porta do site
-ESP8266WebServer server(3000);
+ESP8266WebServer server(3001);
 
 void setup()
 {
-    Serial.begin(115200)
+    Serial.begin(115200);
 
         // Realizando a conexão com a rede
         WiFi.begin(ssid, pas);
 
-    while (WiFi.status() != WL_CONECTED)
+    while (WiFi.status() != 'WL_CONECTED')
     {
         delay(1000);
         Serial.println("Conectando ao Wi-Fi. Aguarde!");
@@ -37,8 +32,8 @@ void setup()
     server.on("/desligar", handleDesligar); // Rota para desligar o relé
 
     //Tem que ver se criar o server pelo express já é necessario
-    //server.begin();
-    //Serial.println("Servidor iniciado!");
+    server.begin();
+    Serial.println("Servidor iniciado!");
 }
 void loop()
 {
